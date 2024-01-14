@@ -2,17 +2,17 @@
 FROM python:3.9-slim
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /voucher-image
 
 # Copy the Python scripts into the container
-COPY Main.py .
-COPY voucheritem.py .
-COPY voucher.py .
+COPY ./ /voucher-image/
 
 # Run main.py when the container launches
 CMD ["python", "Main.py"]
-#use these comand in terminal
-#docker build -t voucher-app .
-#docker run voucher-app
+#use these commands in terminal
+#docker image build -t voucher-app:1.0.0
+#docker images
+#docker tag voucher-app:1.0.0 ibtsam1/voucher-app:1.0.0
+#docker images
 
 
