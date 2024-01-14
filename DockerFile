@@ -5,12 +5,12 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the Python scripts into the container
-COPY main.py .
+COPY Main.py .
 COPY voucheritem.py .
 COPY voucher.py .
 
 # Run main.py when the container launches
-CMD ["python", "main.py"]
+CMD ["python", "Main.py"]
 #use these comand in terminal
 #docker build -t voucher-app .
 #docker run voucher-app
