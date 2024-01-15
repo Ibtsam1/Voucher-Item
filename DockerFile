@@ -11,7 +11,7 @@ COPY ./ /voucher-image/
 CMD ["python", "Main.py"]
 #use these commands in terminal
 #docker image build -t voucher-app:1.0.0
-#docker images
+#docker images(for checking images)
 #docker tag voucher-app:1.0.0 ibtsam1/voucher-app:1.0.0
 #docker images
 
